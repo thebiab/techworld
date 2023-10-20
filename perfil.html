@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="twlogo.png" type="image/x-icon">
+    <title>Seu perfil</title>
+    <link rel="stylesheet" href="perfil.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+</head>
+<body>
+<!-------------------------------------- cabeçalho ----------------------------------------->
+    <header class="header">
+
+        <a href="inti.html" class="logo"> <i class="fas fa-robot"></i> TechWorld Brasil </a>
+
+        <nav class="navbar">
+          
+            <a href="inti.html">Home</a>
+           
+            <a href="cursos.html">Cursos</a>
+           
+      
+        </nav>
+
+    </header>
+
+<!-------------------------------------- perfil inicio ----------------------------------------->
+    <main class="profile-page">
+        <section class="profile-info">
+            <img src="https://s2-oglobo.glbimg.com/N20I5KN4CwQk9ccz_3lh59tbUL0=/0x0:924x914/888x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_da025474c0c44edd99332dddb09cabe8/internal_photos/bs/2023/Y/s/wWZp0oQwmAwTnjnx99aw/whatsapp-image-2023-04-14-at-09.58.07.jpeg" alt="Minha Foto de Perfil">
+            <h1>Sofia Andrade Lacerda</h1>
+            <p>Email: sofiandrade@gmail.com</p>
+            <p>Data de Nascimento: 20/03/1990</p>
+            <p>Localização: SP, Brasil</p>
+            <p>LinkedIn: <a href="#">linkedin.com/sofiandrade</a></p>
+        </section>
+
+<!-------------------------------------- habilidades etc ----------------------------------------->
+        <section class="skills">
+            <h2>Habilidades</h2>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Python</li> 
+            </ul>
+        </section>
+
+<!-------------------------------------- projetos ----------------------------------------->
+        
+<section class="projects">
+    <h2>Projetos</h2>
+    <div class="canto"> 
+        
+           
+            <div class="curso">
+                <img src="HTML-Basic_resized (2).jpg" alt="Html">
+                <h2>Html - Avançado</h2>
+                <a href="https://www.alura.com.br/formacao-css-estilos">Certificado</a>   
+            </div>
+        
+                <div class="curso">
+                    <img src="css_resized.jpg" alt="css">
+                    <h2>Css - Avançado</h2>
+                    <a href="https://www.alura.com.br/formacao-html-css?utm_term=curso%20html&utm_campaign=%5BSearch%5D+%5BPerformance%5D+-+Cursos+-+Campanha+Unificada&utm_source=adwords&utm_medium=ppc&hsa_acc=7964138385&hsa_cam=10211097486&hsa_grp=104839518631&hsa_ad=661019737413&hsa_src=g&hsa_tgt=kwd-44802901&hsa_kw=curso%20html&hsa_mt=p&hsa_net=adwords&hsa_ver=3&gclid=CjwKCAjw4P6oBhBsEiwAKYVkqygD93vh3IAyowPJael8NY3_eLR7bjOXJ-MtnWC1zy9UrB_mNy_ydhoC2hsQAvD_BwE">Continuar</a>   
+                </div>
+            
+        </div>
+    </main>
+</section>
+<!-------------------------------------- script pra dar um efeitinho na pagina quandp abre a tela ----------------------------------------->
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script>
+        const navbar = document.querySelector(".navbar");
+
+        document.querySelector("#login-btn").onclick = () => {
+            login.classList.toggle('active');
+            navbar.classList.remove('active');
+        };
+
+        // -------------------- Inicializar o Swiper para a galeria de fotos-----------------------------------
+        new Swiper(".swiper-container", {
+            pagination: {
+                el: ".swiper-pagination",
+            },
+        });
+    </script>
+
+<!-------------------------------------- rodapé ----------------------------------------->
+     <section class="rodape" id="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3><i class="fas fa-robot"></i> TechWorld
+           </h3>
+            </div>
+            <div class="box">
+                <h3>Informações</h3>
+                <a href="#" class="links"><i class="fas fa-phone"></i> 1245-147-2589</a>
+                <a href="#" class="links"><i class="fas fa-phone"></i> 1245-147-2589</a>
+                <a href="#" class="links"><i class="fas fa-envelope"></i> techworld@gmail.com</a>
+                <a href="#" class="links"><i class="fas fa-map-marker-alt"></i> Diadema, SP</a>
+            </div>
+            <div class="box">
+                <h3>Links</h3>
+                <a href="inti.html"  class="links"> <i class="fas fa-arrow-right"></i>HOME</a>
+        
+                <a href="cursos.html" class="links"> <i class="fas fa-arrow-right"></i>CURSOS</a>
+            </div>
+            <div class="box">
+                <h3>Atualizações</h3>
+                <p>Receba Atualizações:</p>
+                <input type="email" placeholder="Email" class="email">
+                
+            </div>
+        </div>
+        <div class="credit">&copy; 2023 TechWorl. Todos direitos são reservados por TechWorld. </div>
+    
+    </section>
+</body>
+</html>
+
+
+

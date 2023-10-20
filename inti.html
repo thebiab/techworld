@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechWorld: Sua jornada na programação começa aqui! </title>
+    <link rel="shortcut icon" href="twlogo.png" type="image/x-icon">
+    <link rel="stylesheet" href="estilo.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+</head>
+<body>
+<!-------------------------------------- cabeçalho ----------------------------------------->
+    <header class="header">
+
+        <a href="inti.html" class="logo"> <i class="fas fa-robot"></i> TechWorld Brasil </a>
+
+        <nav class="navbar">
+          
+            <a href="#home">Home</a>
+           <a href="#about">Sobre</a>
+            <a href="cursos.html">Cursos</a>
+            <a href="#contato">Contato</a>
+      
+        </nav>
+
+        <div class="icons">
+            <div id="login-btn" class="fas fa-user"></div>
+            <div id="menu-btn" class="fas fa-bars"> </div>
+        </div>
+
+        <form action="" class="login-form">
+
+            <h3>CADASTRO</h3>
+            <input type="text" placeholder="Insira seu Nome" class="box" required>
+            
+            <input type="email" placeholder="Insira seu email" class="box" required>
+            <input type="password" placeholder="Insira sua senha" class="box" required>
+            <div class="remember">
+                <input type="checkbox" name="" id="remember-me">
+                <label for="remember-me">Lembrar Senha</label>
+                
+            </div>
+            <a href="perfil.html" class="btn" onclick="clicar()">Entrar</a>
+
+<!-------------------------------------- script abrir o negovio de cadastro ----------------------------------------->
+            <script>
+                let login = document.querySelector(".login-form");
+
+                document.querySelector("#login-btn").onclick = () =>{
+                    login.classList.toggle('active');
+                    navbar.classList.remove('active');
+                }
+
+                function clicar(){
+                    window.alert('Cadastro realizado com sucesso!')
+                }
+            </script>
+        </form>
+    </header>
+    
+<!-------------------------------------- texto de inicio ----------------------------------------->
+    <section class="home" id="home">
+        <div class="content">
+            <h3>Desvendando o código do sucesso,  <br>
+                um curso de cada vez!<br> 
+              </h3>
+            <a href="cursos.html" id="remedios" class="btn">Nossos Cursos</a>
+        </div>
+    </section>
+
+<!-------------------------------------- sobre nós ----------------------------------------->
+    <section class="about" id="about">
+        <div class="box-container">
+            <div class="image">
+                <img src="img-removebg-preview.png" alt="">
+            </div>
+
+            <div class="content">
+                <h3 class="title">TechWorld, quem somos?</h3>
+                <p class="message">A TechWorld é uma empresa de tecnologia dedicada a tornar a programação acessível e empolgante para todos. Oferecemos uma variedade de cursos abrangentes em linguagens de programação populares, permitindo que os alunos estudem no seu próprio ritmo e se conectem com uma comunidade ativa. Nosso compromisso com a excelência na aprendizagem e a
+                     construção de uma comunidade colaborativa fazem da TechWorld o destino ideal para aqueles que desejam dominar a arte da programação e criar o futuro da tecnologia. 
+                </p>
+                
+                <div class="icons-container">
+                    <div class="icons">
+                        <i class="fas fa-people-arrows"></i>
+                        <h3>Comunicação</h3>
+                    </div>
+
+                    <div class="icons">
+                        <i class="fas fa-robot"></i>
+                        <h3> Tecnologia</h3>
+                    </div>
+
+                    <div class="icons">
+                        <i class="fas fa-crown"></i>
+                        <h3>Excelência</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-------------------------------------- fale conosco - contato ----------------------------------------->
+    <section class="contato" id="contato">
+        <h2 style="color: black;">Fale conosco</h2>
+        <form id="meuForm">
+            <div class="inputBox">
+                <input type="text" placeholder="Nome">
+                <input type="email" placeholder="Email">
+            </div>
+            <div class="inputBox">
+                <input type="date" placeholder="Data">
+                <input type="text" placeholder="Assunto">
+            </div>
+            <textarea name="" id="" cols="30" rows="10" placeholder="Mensagem..."></textarea>
+            <button type="button" class="btn" onclick="enviarMensagem()">Envie</button>
+        </form>
+    </section>
+    
+<!-------------------------------------- script pára abrir mensagem da parte de contato ----------------------------------------->
+    <script>
+        function enviarMensagem() {
+            
+            alert("Sua mensagem foi enviada com sucesso!");
+        }
+    </script>
+
+<!-------------------------------------- rodape ----------------------------------------->
+    <section class="rodape" id="footer">
+        <div class="box-container">
+            <!------------- contador de visitas ------------>
+            <div class="box">
+                <h3><i class="fas fa-robot"></i> TechWorld
+                    <div class="counter">
+                        <h1>Contador de Visitas</h1>
+                        <p><span id="contador">0</span> pessoas visitaram o seu site.</p>
+                        <button onclick="zerarContagem()" class="btn">Zerar Contagem</button>
+                    </div>
+                    <script src="script.js"></script>
+                </h3>
+            </div>
+            <!------------- informacoes ------------>
+            <div class="box">
+                <h3>Informações</h3>
+                <a href="#" class="links"><i class="fas fa-phone"></i> 1245-147-2589</a>
+                <a href="#" class="links"><i class="fas fa-phone"></i> 1245-147-2589</a>
+                <a href="#" class="links"><i class="fas fa-envelope"></i> techworld@gmail.com</a>
+                <a href="#" class="links"><i class="fas fa-map-marker-alt"></i> Diadema, SP</a>
+            </div>
+    
+            <!------------- links ------------>
+            <div class="box">
+                <h3>Links</h3>
+                <a href="#home"  class="links"> <i class="fas fa-arrow-right"></i>HOME</a>
+                <a href="#about"  class="links"> <i class="fas fa-arrow-right"></i>SOBRE</a>
+                <a href="cursos.html" class="links"> <i class="fas fa-arrow-right"></i>CURSOS</a>
+            </div>
+    
+            <!------------- atualizacoes ------------>
+            <div class="box">
+                <h3>Atualizações</h3>
+                <p>Receba Atualizações:</p>
+                <input type="email" placeholder="Email" class="email">
+                <a href="#" class="btn">Nos siga</a>
+                <div class="share">
+                    <a href="#" class="fab fa-facebook-f"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-instagram"></a>
+                    <a href="#" class="fab fa-linkedin"></a>
+                </div>
+            </div>
+        </div>
+        <div class="credit">&copy; 2023 TechWorld. Todos direitos são reservados por TechWorld. </div>
+    </section>
+
+</body>
+</html>
